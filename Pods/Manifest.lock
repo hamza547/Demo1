@@ -1,0 +1,20 @@
+PODS:
+  - AppLovinSDK (6.15.1)
+  - RKDropdownAlert (0.3.0)
+
+DEPENDENCIES:
+  - AppLovinSDK
+  - RKDropdownAlert
+
+SPEC REPOS:
+  trunk:
+    - AppLovinSDK
+    - RKDropdownAlert
+
+SPEC CHECKSUMS:
+  AppLovinSDK: 9dd4c510694a91eea28c5c0711b1079947f860e3
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+
+PODFILE CHECKSUM: 219b9a3bc8a3421989b2967628775c229a99369e
+
+COCOAPODS: 1.10.0
