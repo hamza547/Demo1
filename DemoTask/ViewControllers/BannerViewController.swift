@@ -11,12 +11,15 @@ import AppLovinSDK
 class BannerViewController: UIViewController, MAAdViewAdDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var bannerView: UIView!
-    private let adView = MAAdView(adUnitIdentifier: "dde2ca78eb234659")
+    
+    var adView: MAAdView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        adView = MAAdView(adUnitIdentifier: "dde2ca78eb234659")
         adView.delegate = self
+        overrideUserInterfaceStyle = .light
         
         // Calculate dimensions
         let width = bannerView.frame.width // Stretch to the width of the screen for banners to be fully functional
@@ -30,11 +33,14 @@ class BannerViewController: UIViewController, MAAdViewAdDelegate, UITableViewDat
         adView.backgroundColor = .clear
         
         view.addSubview(adView)
+        view.bringSubviewToFront(adView)
         
         // Load the first ad
         adView.loadAd()
         
     }
+    
+    // TableView Delegate Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
@@ -51,22 +57,27 @@ class BannerViewController: UIViewController, MAAdViewAdDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-            self.performSegue(withIdentifier: "SecondRewardViewController", sender: self)
+            self.performSegue(withIdentifier: "ViewController", sender: self)
             tableView.deselectRow(at: indexPath, animated: true)
 
         }
     
     // MARK: MAAdDelegate Protocol
     
-    func didLoad(_ ad: MAAd) { }
+    func didLoad(_ ad: MAAd) {
+    }
     
     func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withErrorCode errorCode: Int) {
-        
+        adView.isHidden = false
+        adView.startAutoRefresh()
     }
 
     func didDisplay(_ ad: MAAd) {  }
     
-    func didHide(_ ad: MAAd) { }
+    func didHide(_ ad: MAAd) {
+        adView.isHidden = true
+        adView.stopAutoRefresh()
+    }
     
     func didClick(_ ad: MAAd) { }
     

@@ -17,6 +17,7 @@ class InterstitialsViewController: UIViewController, MAAdDelegate {
         super.viewDidLoad()
 
         interstitialAd.delegate = self
+        overrideUserInterfaceStyle = .light
         
         // Load the first ad
         interstitialAd.load()
@@ -25,6 +26,7 @@ class InterstitialsViewController: UIViewController, MAAdDelegate {
         
     }
     
+    // Time Object to call the method after one second delay
     @objc func fire()
     {
         interstitialAd.show()
@@ -50,6 +52,7 @@ class InterstitialsViewController: UIViewController, MAAdDelegate {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delaySec) {
             self.interstitialAd.load()
+            self.interstitialAd.show()
         }
     }
     

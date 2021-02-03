@@ -17,7 +17,8 @@ class FirstRewordViewController: UIViewController, MARewardedAdDelegate {
         super.viewDidLoad()
 
         rewardedAd.delegate = self
-        
+        overrideUserInterfaceStyle = .light
+
         // Load the first ad
         rewardedAd.load()
     }
@@ -73,8 +74,8 @@ class FirstRewordViewController: UIViewController, MARewardedAdDelegate {
     {
         // Rewarded ad was displayed and user should receive the reward
         
+        // Demiss the view controller after watching the rewad add
         navigationController?.popViewController(animated: true)
-
         dismiss(animated: true, completion: nil)
     }
 }
