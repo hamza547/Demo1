@@ -20,10 +20,13 @@ class InterstitialsViewController: UIViewController, MAAdDelegate {
         
         // Load the first ad
         interstitialAd.load()
+        
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: false)
+        
     }
     
-    @IBAction func showAd(_ sender: Any) {
-        
+    @objc func fire()
+    {
         interstitialAd.show()
     }
     

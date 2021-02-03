@@ -8,7 +8,7 @@
 import UIKit
 import AppLovinSDK
 
-class BannerViewController: UIViewController, MAAdViewAdDelegate, UITableViewDataSource {
+class BannerViewController: UIViewController, MAAdViewAdDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var bannerView: UIView!
     private let adView = MAAdView(adUnitIdentifier: "dde2ca78eb234659")
@@ -37,17 +37,24 @@ class BannerViewController: UIViewController, MAAdViewAdDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "normalCell", for: indexPath)
-        cell.textLabel?.text  = "this is row no: \(indexPath.row)"
-        cell.imageView?.image = UIImage(named: "clock")
+        cell.textLabel?.text  = "Exercise \(indexPath.row)"
+        cell.imageView?.image = UIImage(named: "istockphoto-853271840-612x612")
         cell.accessoryType = .disclosureIndicator
-        cell.detailTextLabel?.text = "This is detail text."
+        cell.detailTextLabel?.text = "The exercise short desiption will be given here."
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+            self.performSegue(withIdentifier: "SecondRewardViewController", sender: self)
+            tableView.deselectRow(at: indexPath, animated: true)
+
+        }
     
     // MARK: MAAdDelegate Protocol
     

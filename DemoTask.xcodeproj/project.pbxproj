@@ -20,14 +20,7 @@
 		04E9EB0325C9BEFD000B6BB6 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB0225C9BEFD000B6BB6 /* BannerViewController.swift */; };
 		04E9EB0725C9C106000B6BB6 /* FirstRewordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB0625C9C106000B6BB6 /* FirstRewordViewController.swift */; };
 		04E9EB0B25C9C140000B6BB6 /* SecondRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB0A25C9C140000B6BB6 /* SecondRewardViewController.swift */; };
-		04E9EB0F25C9C756000B6BB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB0E25C9C756000B6BB6 /* LoginViewController.swift */; };
 		04E9EB1325C9C77E000B6BB6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB1225C9C77E000B6BB6 /* BaseViewController.swift */; };
-		04E9EB1B25C9C7CB000B6BB6 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB1725C9C7CB000B6BB6 /* Alert.swift */; };
-		04E9EB1C25C9C7CB000B6BB6 /* ValidationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB1825C9C7CB000B6BB6 /* ValidationMethods.swift */; };
-		04E9EB1D25C9C7CB000B6BB6 /* LogoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB1925C9C7CB000B6BB6 /* LogoTextField.swift */; };
-		04E9EB1E25C9C7CB000B6BB6 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB1A25C9C7CB000B6BB6 /* BorderedButton.swift */; };
-		04E9EB2A25C9C910000B6BB6 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB2825C9C910000B6BB6 /* ViewControllerExtension.swift */; };
-		04E9EB2B25C9C910000B6BB6 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9EB2925C9C910000B6BB6 /* TextFieldExtension.swift */; };
 		48D41A14C91E6D7F074297B5 /* AppLovinQualityService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8121C80E7314D87E4983C45 /* AppLovinQualityService.xcframework */; };
 		758629E03CEC81CC70650259 /* AppLovinQualityService.xcframework in AppLovinQualityService Embed Framework */ = {isa = PBXBuildFile; fileRef = C8121C80E7314D87E4983C45 /* AppLovinQualityService.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		978EAAC2CE6E35A8F93D60DF /* Pods_DemoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3459AD433F9F9A079BCA4B41 /* Pods_DemoTask.framework */; };
@@ -85,14 +78,7 @@
 		04E9EB0225C9BEFD000B6BB6 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		04E9EB0625C9C106000B6BB6 /* FirstRewordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRewordViewController.swift; sourceTree = "<group>"; };
 		04E9EB0A25C9C140000B6BB6 /* SecondRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRewardViewController.swift; sourceTree = "<group>"; };
-		04E9EB0E25C9C756000B6BB6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04E9EB1225C9C77E000B6BB6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		04E9EB1725C9C7CB000B6BB6 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		04E9EB1825C9C7CB000B6BB6 /* ValidationMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationMethods.swift; sourceTree = "<group>"; };
-		04E9EB1925C9C7CB000B6BB6 /* LogoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoTextField.swift; sourceTree = "<group>"; };
-		04E9EB1A25C9C7CB000B6BB6 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		04E9EB2825C9C910000B6BB6 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
-		04E9EB2925C9C910000B6BB6 /* TextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		1010B02E42991889BF45D2CF /* Pods-DemoTask-DemoTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTask-DemoTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoTask-DemoTaskUITests/Pods-DemoTask-DemoTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		15D9CACDA9DB9EF0CCB61FCD /* Pods-DemoTask-DemoTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTask-DemoTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-DemoTask-DemoTaskUITests/Pods-DemoTask-DemoTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E18C853410F90451F1F9FD7 /* Pods-DemoTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTask.release.xcconfig"; path = "Target Support Files/Pods-DemoTask/Pods-DemoTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,8 +142,6 @@
 		04E9EA8725C99419000B6BB6 /* DemoTask */ = {
 			isa = PBXGroup;
 			children = (
-				04E9EB2725C9C910000B6BB6 /* Extensions */,
-				04E9EB1625C9C7CB000B6BB6 /* Other files */,
 				04E9EA8825C99419000B6BB6 /* AppDelegate.swift */,
 				04E9EA8A25C99419000B6BB6 /* SceneDelegate.swift */,
 				04E9EA8E25C99419000B6BB6 /* Main.storyboard */,
@@ -170,7 +154,6 @@
 				04E9EB0225C9BEFD000B6BB6 /* BannerViewController.swift */,
 				04E9EB0625C9C106000B6BB6 /* FirstRewordViewController.swift */,
 				04E9EB0A25C9C140000B6BB6 /* SecondRewardViewController.swift */,
-				04E9EB0E25C9C756000B6BB6 /* LoginViewController.swift */,
 				04E9EB1225C9C77E000B6BB6 /* BaseViewController.swift */,
 			);
 			path = DemoTask;
@@ -192,26 +175,6 @@
 				04E9EAAF25C9941C000B6BB6 /* Info.plist */,
 			);
 			path = DemoTaskUITests;
-			sourceTree = "<group>";
-		};
-		04E9EB1625C9C7CB000B6BB6 /* Other files */ = {
-			isa = PBXGroup;
-			children = (
-				04E9EB1725C9C7CB000B6BB6 /* Alert.swift */,
-				04E9EB1825C9C7CB000B6BB6 /* ValidationMethods.swift */,
-				04E9EB1925C9C7CB000B6BB6 /* LogoTextField.swift */,
-				04E9EB1A25C9C7CB000B6BB6 /* BorderedButton.swift */,
-			);
-			path = "Other files";
-			sourceTree = "<group>";
-		};
-		04E9EB2725C9C910000B6BB6 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				04E9EB2825C9C910000B6BB6 /* ViewControllerExtension.swift */,
-				04E9EB2925C9C910000B6BB6 /* TextFieldExtension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		53270862187C60E713FE1CEE /* Frameworks */ = {
@@ -530,20 +493,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E9EB0F25C9C756000B6BB6 /* LoginViewController.swift in Sources */,
 				04E9EB0325C9BEFD000B6BB6 /* BannerViewController.swift in Sources */,
-				04E9EB1D25C9C7CB000B6BB6 /* LogoTextField.swift in Sources */,
 				04E9EA9325C99419000B6BB6 /* DemoTask.xcdatamodeld in Sources */,
 				04E9EB0725C9C106000B6BB6 /* FirstRewordViewController.swift in Sources */,
 				04E9EA8925C99419000B6BB6 /* AppDelegate.swift in Sources */,
-				04E9EB1E25C9C7CB000B6BB6 /* BorderedButton.swift in Sources */,
 				04E9EB1325C9C77E000B6BB6 /* BaseViewController.swift in Sources */,
-				04E9EB2A25C9C910000B6BB6 /* ViewControllerExtension.swift in Sources */,
-				04E9EB2B25C9C910000B6BB6 /* TextFieldExtension.swift in Sources */,
 				04E9EAF325C9AC49000B6BB6 /* TableViewController.swift in Sources */,
 				04E9EAFF25C9BACD000B6BB6 /* InterstitialsViewController.swift in Sources */,
-				04E9EB1B25C9C7CB000B6BB6 /* Alert.swift in Sources */,
-				04E9EB1C25C9C7CB000B6BB6 /* ValidationMethods.swift in Sources */,
 				04E9EB0B25C9C140000B6BB6 /* SecondRewardViewController.swift in Sources */,
 				04E9EA8B25C99419000B6BB6 /* SceneDelegate.swift in Sources */,
 			);

@@ -22,11 +22,6 @@ class FirstRewordViewController: UIViewController, MARewardedAdDelegate {
         rewardedAd.load()
     }
     
-    @IBAction func showAd()
-    {
-        rewardedAd.show()
-    }
-    
     // MARK: MAAdDelegate Protocol
     
     func didLoad(_ ad: MAAd)
@@ -35,6 +30,8 @@ class FirstRewordViewController: UIViewController, MARewardedAdDelegate {
         
         // Reset retry attempt
         retryAttempt = 0
+        
+        rewardedAd.show()
     }
     
     func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withErrorCode errorCode: Int)
@@ -69,10 +66,15 @@ class FirstRewordViewController: UIViewController, MARewardedAdDelegate {
     
     func didStartRewardedVideo(for ad: MAAd) { }
     
-    func didCompleteRewardedVideo(for ad: MAAd) { }
+    func didCompleteRewardedVideo(for ad: MAAd) {
+    }
     
     func didRewardUser(for ad: MAAd, with reward: MAReward)
     {
         // Rewarded ad was displayed and user should receive the reward
+        
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
     }
 }
